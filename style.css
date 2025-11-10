@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%); /* Degradado suave */
+    color: #333;
+    text-align: center;
+    overflow: hidden; /* Para evitar scroll si los emojis se salen */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    transform: translateY(0);
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    color: #007bff; /* Azul brillante */
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.emoji-section {
+    margin: 30px 0;
+}
+
+.emoji {
+    font-size: 3.5em;
+    margin: 0 15px;
+    display: inline-block;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.emoji:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.emoji:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.small-text {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+.button-lang {
+    margin-top: 30px; 
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #fff;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-lang:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.button-lang:active {
+    transform: translateY(0); 
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 30px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .emoji {
+        font-size: 2.5em;
+        margin: 0 10px;
+    }
+}
