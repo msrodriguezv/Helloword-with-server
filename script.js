@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const translations = {
       es: {
-        title: "¡Hola Mundo con Estilo! 👋",
+        title: "¡Hola Mundo ! 👋",
         subtitle: "Este es mi proyecto desplegado en la nube.",
         thanks: "¡Gracias por visitarnos!",
         button: "Switch to English"
       },
       en: {
-        title: "Hello World with Style! 👋",
+        title: "Hello World ! 👋",
         subtitle: "This is my project deployed in the cloud.",
         thanks: "Thanks for visiting!",
         button: "Cambiar a Español"
