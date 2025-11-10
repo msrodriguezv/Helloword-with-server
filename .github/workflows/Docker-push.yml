@@ -24,4 +24,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: tu-usuario/mi-proyecto-docker:latest
+        tags: msrodriguezv/helloword-with-server:latest
